@@ -11,9 +11,9 @@
 
 ## Responsibilities
 
-1. Berkeley: Fancier HTML/CSS
+1. Berkeley: Fancier HTML/~CSS~
 2. Chris: Hosting the web-server [here](https://cpsc349-project1.iamchrisama.com/), SSG / Eleventy implementation
-3. Jared: Fancier HTML/CSS
+3. Jared: Fancier HTML/~CSS~
 4. Scott: SSG / Eleventy implementation
 
 ---
