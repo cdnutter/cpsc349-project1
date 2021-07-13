@@ -2,14 +2,14 @@
 
 ![axolotl](https://assets.b8ta.com/uploads/company_asset/file/66610/eba6e6d6e93bff0e787dd2ea8337530e.png?width=720)
 
-Group #4 - Axolotl
+## Group #4 - Axolotl
 
 1. Berkeley C. 
 2. Chris Nutter
 3. Jared Schneider
 4. Scott Park
 
-Responsibilities
+## Responsibilities
 
 1. Berkeley: being cool
 2. Chris: Hosting the webserver, being cooler
