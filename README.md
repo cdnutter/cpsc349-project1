@@ -11,10 +11,10 @@
 
 ## Responsibilities
 
-1. Berkeley: being cool
-2. Chris: Hosting the webserver, being cooler
-3. Jared: Jared
-4. Scott: Getting a microphone... if he wants no pressure owo
+1. Berkeley: Fancier HTML/CSS
+2. Chris: Hosting the web-server [here](https://cpsc349-project1.iamchrisama.com/), API implementation
+3. Jared: Fancier HTML/CSS
+4. Scott: API implementation!
 
 ---
 
