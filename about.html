@@ -1,0 +1,29 @@
+---
+site: Pet Photos
+title: About Us
+---
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+</head>
+<body>
+
+    <h1>{{ site }}</h1>
+
+    {% unless page.url == '/' %}
+    	<a href="/">Home</a>
+    {% endunless %}
+
+    {{ content }}
+
+    <ul>
+        {% for photo in collections.photos %}
+            <li>
+                <a href="{{ photo.url }}">
+                    A {{ photo.data.photo_keyword }} photo
+                    by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
+
+</body>
