@@ -6,7 +6,9 @@ site: Pet Photos
 </head>
 <body>
 
-    <h1>{{ site }}</h1>
+  <header>
+      <h1>{{ site }}</h1>
+  </header>
 
     {% unless page.url == '/' %}
     	<a href="/">Home</a>
@@ -24,5 +26,9 @@ site: Pet Photos
             </li>
         {% endfor %}
     </ul>
+
+    <footer>
+      <a href="#">Contact</a>
+    </footer>
 
 </body>

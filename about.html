@@ -9,21 +9,13 @@ title: About Us
 
     <h1>{{ site }}</h1>
 
-    {% unless page.url == '/' %}
-    	<a href="/">Home</a>
-    {% endunless %}
-
-    {{ content }}
-
+    <a href="/">Home</a>
+    <h2>The Creators</h2>
     <ul>
-        {% for photo in collections.photos %}
-            <li>
-                <a href="{{ photo.url }}">
-                    A {{ photo.data.photo_keyword }} photo
-                    by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
-                </a>
-            </li>
-        {% endfor %}
+      <li>Jared Schneider</li>
+      <li>Sanghyuk Scott Park</li>
+      <li>Chris Nutter</li>
+      <li>Berkeley C</li>
     </ul>
 
 </body>
