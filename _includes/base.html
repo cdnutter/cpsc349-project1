@@ -9,30 +9,48 @@ site: Pet Photos
   <header>
       <h1 style="font-size:50px">{{ site }}</h1>
       <p>Provided by Axolotl</p>
+      	<br>
+      <a href="/">Home</a> // <a href="/about">About</a> // <a href="/tags_temp">Tags</a>
   </header>
 
     {% unless page.url == '/' %}
-    	<a href="/">Home</a>
+    	<center>
+    		{{ content }}
+    			<br>
+    			
+    		<b>Name</b>: {{ photographer_first_name }} {{ photographer_last_name }}
+    			<br>
+    		<b>Size</b>: {{ photo_height }} x {{ photo_width }}
+    		    	<br><br>  		
+    		<b>Views</b>: {{ stats_views }}
+    			<br>    		
+    		<b>Downloads</b>: {{ stats_downloads }}
+    			<br><br>
+    		<small>{{ ai_description }}</small>
+	</center>
+		<hr>
     {% endunless %}
 
-    {{ content }}
 
+
+	<br>
+&nbsp;More Photos:
     <ul>
         {% for photo in collections.photos %}
-            <li>
+            
                 <a href="{{ photo.url }}">
                     A {{ photo.data.photo_keyword }} photo
                     by {{ photo.data.photographer_first_name}} {{ photo.data.photographer_last_name }}
-                </a>
-            </li>
+                </a><br>
+            
         {% endfor %}
     </ul>
 
     <footer>
       <center><p>Copyright © 2021, Axolotl</p>
-      <a href="#">Contact</a>
+      <a href="/tags">Tags</a>
       <span>//</span>
-      <a href="#">About us</a>
+      <a href="/about">About</a>
     </center>
     </footer>
 
