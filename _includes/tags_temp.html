@@ -1,0 +1,47 @@
+<!--
+    Futile Attempt at Adding Template.
+    Need:
+    1. Print a list of Tags ("photo.data.keyword")
+    
+    If we have time:
+    1. Make tags clickable link, where it links to
+    another page with all the photo.html with that tag.
+
+
+    Problems I'm having with the stuff:
+    1. How to define "tag" as "photo.data.keyword"?
+        ^I think if we get this down, we can do others relatively easily
+    2. How to sort through the tags of all the data and select unique tags?
+        ^Use JS...? Idk if this is necessary.
+
+-->
+
+<!-- Ref: https://www.11ty.dev/docs/quicktips/tag-pages/ -->
+
+
+---
+pagination:
+    data: collections.photo
+    size: 1
+    alias: tag
+permalink: /tags/{{ tag }}/  <!-- Where tag pages will be generated -->
+---
+
+<h1> Photos with Tag "{{ tag }}" </h1>
+
+<a href=/about>About Us</a>
+    <a href="/">Home</a>
+
+<!--
+    Code given in our example:
+
+    <ol>
+    {% set taglist = collections[ tag ] %}
+    {% for post in taglist | reverse %}
+      <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+    {% endfor %}
+    </ol>
+
+
+
+-->
