@@ -21,10 +21,11 @@ site: Pet Photos
   </header>
 
     {% unless page.url == '/' %}
+
     	<center>
     		{{ content }}
     			<br>
-    			
+    {% if page.url != '/about/' %}   			
     		<b>Name</b>: {{ photographer_first_name }} {{ photographer_last_name }}
     			&emsp;
     		<b>Views</b>: {{ stats_views }}
@@ -40,7 +41,9 @@ site: Pet Photos
             {% endif %}
             	<br><br>
             <small><i>{{ ai_description }}</i></small>
+    {% endif %}
 	</center>
+
 		<hr>	
     {% endunless %}
 		
