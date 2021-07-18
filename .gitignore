@@ -1,7 +1,0 @@
-node_modules/
-photos/
-*.zip
-unsplash/*.tsv*
-unsplash/README.md
-unsplash/TERMS.md
-push.sh
