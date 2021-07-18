@@ -10,38 +10,37 @@ site: Pet Photos
       <h1 style="font-size:50px">{{ site }}</h1>
       <p>Provided by Axolotl</p>
       	<br>
-      <a href="/">Home</a> // <a href="/about">About</a> // <a href="/tags_temp">Tags</a>
+      <a href="/">Home</a>&nbsp;&nbsp;//&nbsp;&nbsp;<a href="/about">About</a>&nbsp;&nbsp;//&nbsp;&nbsp;<a href="/tags">Tags</a>
   </header>
 
     {% unless page.url == '/' %}
+    	{% if page.url != '/about' %}
     	<center>
     		{{ content }}
     			<br>
     			
     		<b>Name</b>: {{ photographer_first_name }} {{ photographer_last_name }}
+    			&emsp;
+    		<b>Views</b>: {{ stats_views }}
     			<br>
     		<b>Size</b>: {{ photo_height }} x {{ photo_width }}
-    		    	<br><br>  		
-    		<b>Views</b>: {{ stats_views }}
-    			<br>    		
+    		    	&emsp;		
     		<b>Downloads</b>: {{ stats_downloads }}
     			<br><br>
-    		<small>{{ ai_description }}</small>
-            <br><br>
-            <strong>Map</strong>: <br><br>
             {% if photo_location_latitude == '' %}
                 Map Data Unavailable
             {% else %}
                 <img id="static_map" src="https://api.mapbox.com/styles/v1/mapbox/light-v10/static/{{photo_location_longitude}},{{photo_location_latitude}},14/500x300?access_token=pk.eyJ1Ijoic2NvdHRwYXJrNDQiLCJhIjoiY2tyNXNubThsMzhocTJvdDk5a3ZsMGFhMCJ9.gSYg1ze4cd9dItEiNjfpRg">
-        {% endif %}
+            {% endif %}
+            	<br><br>
+            <small><i>{{ ai_description }}</i></small>
 	</center>
 		<hr>
     {% endunless %}
 
 
-
 	<br>
-&nbsp;More Photos:
+&nbsp;Photos:
     <ul>
         {% for photo in collections.photos %}
             
@@ -54,11 +53,10 @@ site: Pet Photos
     </ul>
 
     <footer>
-      <center><p>Copyright © 2021, Axolotl</p>
-      <a href="/tags">Tags</a>
-      <span>//</span>
-      <a href="/about">About</a>
-    </center>
+	<center>
+		<p>Copyright © 2021, Axolotl</p>
+    		<a href="/about">About</a>&nbsp;&nbsp;//&nbsp;&nbsp;<a href="/tags">Tags</a>
+    	</center>
     </footer>
 
 </body>
