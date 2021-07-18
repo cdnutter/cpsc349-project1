@@ -1,4 +1,5 @@
 node_modules/
+photos/
 *.zip
 unsplash/*.tsv*
 unsplash/README.md
