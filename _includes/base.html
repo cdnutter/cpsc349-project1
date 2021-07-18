@@ -14,7 +14,6 @@ site: Pet Photos
   </header>
 
     {% unless page.url == '/' %}
-    	{% if page.url != '/about' %}
     	<center>
     		{{ content }}
     			<br>
@@ -35,8 +34,9 @@ site: Pet Photos
             	<br><br>
             <small><i>{{ ai_description }}</i></small>
 	</center>
-		<hr>
+		<hr>	
     {% endunless %}
+		
 
 
 	<br>
