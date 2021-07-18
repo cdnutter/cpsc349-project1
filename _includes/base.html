@@ -3,6 +3,13 @@ site: Pet Photos
 ---
 <head>
     <link rel="stylesheet" href="https://unpkg.com/mvp.css">
+    {% if color_keyword == "black"%}
+        <style>
+            body{
+                color: white;
+            }
+        </style>
+    {% endif %}
 </head>
 <body style="background-color: {{ color_keyword }};">
 
